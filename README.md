@@ -250,8 +250,8 @@ LOGGING = {
     'disable_existing_loggers': False,
     'formatters': {
         'standard': {
-            'class': 'jsonformatter.JsonFormatter',
-            'format': OrderedDict([
+            '()': 'jsonformatter.JsonFormatter',
+            'fmt': OrderedDict([
                 ("Name", "name"),
                 ("Levelno", "levelno"),
                 ("Levelname", "levelname"),
